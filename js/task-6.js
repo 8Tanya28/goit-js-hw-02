@@ -17,3 +17,33 @@
 // let input;
 // const numbers = [];
 // let total = 0;
+
+const valueInputRef = document.querySelector(".js-value");
+const addValueBtn = document.querySelector(".js-add-value");
+const calcBtn = document.querySelector(".js-calculate");
+const numbers = [];
+let total = 0;
+
+addValueBtn.addEventListener("click", function () {
+  const value = Number(valueInputRef.value);
+
+  //   const notANumber = Number.isNaN(value);
+  //   if (notANumber) {
+  //     console.log("Було введено не число, попробуйте ще раз");
+  //   }
+
+  numbers.push(value);
+
+  valueInputRef.value = "";
+
+  console.log(numbers);
+});
+
+calcBtn.addEventListener("click", function () {
+  for (const number of numbers) {
+    console.log(numbers);
+    total += number;
+  }
+
+  console.log(`Загальна сума чисел дорівнює ${total}`);
+});

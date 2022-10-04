@@ -57,4 +57,5 @@
 // console.log(addLogin(logins, 'Ajax')); // 'Логін успішно доданий!'
 // console.log(addLogin(logins, 'robotGoogles')); // 'Такий логін вже використовується!'
 // console.log(addLogin(logins, 'Zod')); // 'Помилка! Логін повинен бути від 4 до 16 символів'
-// console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Помилка! Логін повинен бути від 4 до 16 символів'
+// console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Помилка! Логін повинен бути 
+// від 4 до 16 символів'
