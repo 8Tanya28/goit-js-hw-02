@@ -23,9 +23,7 @@
 const checkForSpam = function (message) {
   let norm = message.toLowerCase();
 
-  const words = ["spam", "sale"];
-
-  if (norm.includes(words)) {
+  if (norm.includes("spam") || norm.includes("sale")) {
     return true;
   }
   return false;
